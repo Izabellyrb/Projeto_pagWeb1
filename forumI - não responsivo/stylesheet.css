@@ -4,11 +4,10 @@
     src: url(fonte/Roboto-Light.ttf);
 } 
 
-
 /*regras gerais*/
 
 body {
-	background:rgb(15, 0, 20);
+	background:rgb(43, 40, 44);
 	font-family: calibri, sans-serif;
 	color: #cccccc;
 	margin: 0px 100px 0px 100px;
@@ -35,16 +34,16 @@ div#interface {
 }
 
 header#cabecalho {
-	background-color:#000000;
+	background-color:#3d3144;
 	font-family: 'FonteLogo';
-	color: #800080;
+	color: #ff00ff;
 	font-size: 20px;
 	padding-left: 10px;
 	padding-top: 10px;
 }
 
 nav#menu {
-	background-color: #252525;
+	background-color:#3d3144;
 	margin-left: -10px;
 	margin-right: 0px;
 	padding: 2px;
@@ -84,7 +83,7 @@ article#destaques h2 { /*faixas escuras de titulo*/
 	margin-top: 0px;
 	padding: 10px;
 	padding-left: 20px;
-	color: #800080;
+	color: #ff00ff;
 
 }
 h3 { /*subtitulos*/
@@ -95,7 +94,7 @@ h3 { /*subtitulos*/
 article {
 	display: block;
 	float: left;
-	background-color: #292929;
+	background-color:#3d3144;
 	margin:5px 10px 0px 5px;
 	width: 695px;
 	height: 250px;
@@ -132,7 +131,7 @@ article img#foto-dstq {
 
 .leiaMais:hover {
 	color: #000000;
-	background-color: #800080;
+	background-color: #ff00ff;
 	text-decoration: none;
 	transition: 0.3s;
 	
@@ -144,13 +143,13 @@ article.outros1 h2, article.outros2 h2 {/*faixas escuras de titulo*/
 	margin:-10px -10px 0px -10px;
 	padding: 5px;
 	padding-left: 20px;
-	color: #800080;
+	color: #ff00ff;
 }
 
 article.outros1, article.outros2 {
 	display: block;
 	float: left;
-	background-color: #292929;
+	background-color:#3d3144;
 	margin: 5px 0px 0px 5px;
 	padding: 10px;
 	text-align: justify;
@@ -166,13 +165,13 @@ section#mais1 h2, section#mais2 h2 {/*faixas escuras de titulo*/
 	text-align: center;
 	font-size: 14pt;
 	line-height: 3pt;
-	color: #800080;
+	color: #ff00ff;
 }
 
 section#mais1, section#mais2 {
 	display: block;
 	float: left;
-	background-color: #292929;
+	background-color:#3d3144;
 	margin: 0px 0px 0px 5px;
 	padding: 10px;
 	width: 325px;
@@ -184,7 +183,7 @@ section#mais1, section#mais2 {
 aside#lateral {
 	display: block;
 	float: right;
-	background-color: #292929;
+	background-color:#3d3144;
 	margin:5px 5px 0px 0px;
 	width: 290px;
 	margin:5px 5px 0px 0px;
@@ -195,7 +194,7 @@ div#caixamaislidos h2{ /*faixas escuras de titulo*/
 	text-transform: uppercase;
 	padding: 10px;
 	padding-left: 20px;
-	color:#800080
+	color:#ff00ff
 }
 
 input#pesquisa {
@@ -224,6 +223,10 @@ img.maisLido {
 	background-color: #ffffff;
 	border-radius: 5px;
 	box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+}
+
+img.maisLido:hover {
+	transform: scale(1.1);
 }
 
 /*rodapé*/
