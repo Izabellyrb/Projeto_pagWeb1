@@ -1,0 +1,239 @@
+﻿@charset "utf-8";
+@font-face {
+    font-family: 'FonteLogo';
+    src: url(fonte/Roboto-Light.ttf);
+} 
+
+/*regras gerais*/
+
+body {
+	background:rgb(43, 40, 44);
+	font-family: calibri, sans-serif;
+	color: #cccccc;
+	margin: 0px 100px 0px 100px;
+}	
+
+p{ 
+	font-size: 12pt;
+}
+
+a {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/*bloco de interface*/
+div#interface {
+	width: 1000px;
+	margin: 10px auto 10px auto;
+	box-shadow: 0px 0px 10px #7a037e;
+}
+
+header#cabecalho {
+	background-color:#3d3144;
+	font-family: 'FonteLogo';
+	color: #ff00ff;
+	font-size: 20px;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+nav#menu {
+	background-color:#3d3144;
+	margin-left: -10px;
+	margin-right: 0px;
+	padding: 2px;
+	text-align: center;
+}
+
+nav#menu ul {
+	list-style: none;
+	text-transform: uppercase;
+	font-size: 10pt;
+	margin-left: -50px;
+}
+
+nav#menu li {
+	display: inline-block;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-right: 1px solid #cccccc;
+	line-height: 15px;
+}
+
+nav#menu a:hover{
+	text-decoration: none;
+	transition: 0.5s;
+	color: #d426d4
+}
+/*CORPO - Lado */
+
+div#corpo {  
+    width: 700px;
+	float: left;
+}
+
+article#destaques h2 { /*faixas escuras de titulo*/
+	background-color: #000;
+	text-transform: uppercase;
+	margin-top: 0px;
+	padding: 10px;
+	padding-left: 20px;
+	color: #ff00ff;
+
+}
+h3 { /*subtitulos*/
+	font-size: 14pt;
+	padding-right: 5px;
+}
+
+article {
+	display: block;
+	float: left;
+	background-color:#3d3144;
+	margin:5px 10px 0px 5px;
+	width: 695px;
+	height: 250px;
+	text-align: justify;
+}
+
+article#destaques p{
+	display: block;
+	margin:-5px 10px 2px 5px;
+	padding: 10px;
+	text-align: justify;
+}
+
+article img#foto-dstq {
+	float: left;
+	margin: 0px 10px 0px 15px;
+	width: 150px;
+	height: 150px;
+	background-color: #ffffff;
+	border-radius: 5px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+}
+
+.leiaMais { /*botões*/
+	float:right;
+	margin: -20px 10px 0px 0px;
+	padding: 7px;
+	border-radius: 5px;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #cccccc;
+	background-color: #000000;
+}
+
+.leiaMais:hover {
+	color: #000000;
+	background-color: #ff00ff;
+	text-decoration: none;
+	transition: 0.3s;
+	
+}
+
+article.outros1 h2, article.outros2 h2 {/*faixas escuras de titulo*/
+	background-color: #000000;
+	text-transform: uppercase;
+	margin:-10px -10px 0px -10px;
+	padding: 5px;
+	padding-left: 20px;
+	color: #ff00ff;
+}
+
+article.outros1, article.outros2 {
+	display: block;
+	float: left;
+	background-color:#3d3144;
+	margin: 5px 0px 0px 5px;
+	padding: 10px;
+	text-align: justify;
+	width: 325px;
+	height: 190px;
+}
+
+section#mais1 h2, section#mais2 h2 {/*faixas escuras de titulo*/
+	background-color: #000000;
+	text-transform: uppercase;
+	margin: -10px 5px -10px 0px;
+	padding: 10px;
+	text-align: center;
+	font-size: 14pt;
+	line-height: 3pt;
+	color: #ff00ff;
+}
+
+section#mais1, section#mais2 {
+	display: block;
+	float: left;
+	background-color:#3d3144;
+	margin: 0px 0px 0px 5px;
+	padding: 10px;
+	width: 325px;
+	height: 100px;
+
+}
+
+/*CORPO - Lado esquerdo*/
+aside#lateral {
+	display: block;
+	float: right;
+	background-color:#3d3144;
+	margin:5px 5px 0px 0px;
+	width: 290px;
+	margin:5px 5px 0px 0px;
+}
+
+div#caixamaislidos h2{ /*faixas escuras de titulo*/
+	background-color: #000000;
+	text-transform: uppercase;
+	padding: 10px;
+	padding-left: 20px;
+	color:#ff00ff
+}
+
+input#pesquisa {
+	width:250px;
+	margin:12px 10px 5px 10px;
+	padding: 10px;
+}
+
+div#caixamaislidos {
+	background-color: #808080;
+	margin: -15px 0px 10px 10px;
+	width: 270px;
+	padding-bottom: 10px;
+	color: #000000;
+}
+
+div#caixamaislidos li {
+	margin-top: 0px;
+	padding-right: 5px;
+}
+
+img.maisLido {
+	margin: 3px 5px 6px 15px;
+	width: 120px;
+	height: 120px;
+	background-color: #ffffff;
+	border-radius: 5px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+}
+
+img.maisLido:hover {
+	transform: scale(1.1);
+}
+
+/*rodapé*/
+footer {
+	clear: both;
+	color: #cecece;
+	font-size: 10pt;
+	text-align: center;
+	padding: 5px;
+}
