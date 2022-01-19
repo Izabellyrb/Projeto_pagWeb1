@@ -10,7 +10,7 @@ body {
 	background:rgb(43, 40, 44);
 	font-family: calibri, sans-serif;
 	color: #cccccc;
-	margin: 0px 100px 0px 100px;
+	margin: 0 100px;
 }	
 
 p{ 
@@ -29,17 +29,22 @@ a:hover {
 /*bloco de interface*/
 div#interface {
 	width: 1000px;
-	margin: 10px auto 10px auto;
-	box-shadow: 0px 0px 10px #7a037e;
+	margin: 10px auto;
+	box-shadow: 0 0 10px #7a037e;
 }
 
 header#cabecalho {
 	background-color:#3d3144;
 	font-family: 'FonteLogo';
-	color: #ff00ff;
+	color: #ffffff;
+	text-shadow: 1px 1px 3px #ff00ff;
 	font-size: 20px;
 	padding-left: 10px;
 	padding-top: 10px;
+}
+
+h1#teste, h3#subtitulo {
+	padding-left: 20px
 }
 
 nav#menu {
@@ -67,9 +72,10 @@ nav#menu li {
 
 nav#menu a:hover{
 	text-decoration: none;
-	transition: 0.5s;
+	transition: 0.4s;
 	color: #d426d4
 }
+
 /*CORPO - Lado */
 
 div#corpo {  
@@ -83,7 +89,8 @@ article#destaques h2 { /*faixas escuras de titulo*/
 	margin-top: 0px;
 	padding: 10px;
 	padding-left: 20px;
-	color: #ff00ff;
+	color: #ffffff;
+	text-shadow: 1px 1px 3px #ff00ff;
 
 }
 h3 { /*subtitulos*/
@@ -95,7 +102,7 @@ article {
 	display: block;
 	float: left;
 	background-color:#3d3144;
-	margin:5px 10px 0px 5px;
+	margin:5px 10px 0 5px;
 	width: 695px;
 	height: 250px;
 	text-align: justify;
@@ -103,14 +110,14 @@ article {
 
 article#destaques p{
 	display: block;
-	margin:-5px 10px 2px 5px;
+	margin: -10px 10px 2px 5px;
 	padding: 10px;
 	text-align: justify;
 }
 
 article img#foto-dstq {
 	float: left;
-	margin: 0px 10px 0px 15px;
+	margin: 0 10px 0 15px;
 	width: 150px;
 	height: 150px;
 	background-color: #ffffff;
@@ -120,7 +127,7 @@ article img#foto-dstq {
 
 .leiaMais { /*botões*/
 	float:right;
-	margin: -20px 10px 0px 0px;
+	margin: -20px 20px 0 0;
 	padding: 7px;
 	border-radius: 5px;
 	font-size: 10pt;
@@ -129,54 +136,66 @@ article img#foto-dstq {
 	background-color: #000000;
 }
 
+.outros1 > .leiaMais { 
+	margin: -20px 5px 0 0;
+}
+
 .leiaMais:hover {
 	color: #000000;
 	background-color: #ff00ff;
 	text-decoration: none;
-	transition: 0.3s;
-	
+	transition: 0.4s;
 }
 
 article.outros1 h2, article.outros2 h2 {/*faixas escuras de titulo*/
 	background-color: #000000;
 	text-transform: uppercase;
-	margin:-10px -10px 0px -10px;
+	margin:-10px -10px 0 -10px;
 	padding: 5px;
 	padding-left: 20px;
-	color: #ff00ff;
+	color: #ffffff;
+	text-shadow: 1px 1px 3px #ff00ff;
 }
 
 article.outros1, article.outros2 {
 	display: block;
 	float: left;
 	background-color:#3d3144;
-	margin: 5px 0px 0px 5px;
+	margin: 5px 0 0 5px;
 	padding: 10px;
 	text-align: justify;
 	width: 325px;
 	height: 190px;
 }
 
+.outros1 > p { 
+	margin: 0 6px 15px 4px;
+}
+
+.outros1 > h3 { 
+	margin-left: 4px;
+}
+
 section#mais1 h2, section#mais2 h2 {/*faixas escuras de titulo*/
 	background-color: #000000;
 	text-transform: uppercase;
-	margin: -10px 5px -10px 0px;
+	margin: -10px 5px -10px 0;
 	padding: 10px;
 	text-align: center;
 	font-size: 14pt;
 	line-height: 3pt;
-	color: #ff00ff;
+	color: #ffffff;
+	text-shadow: 1px 1px 3px #ff00ff;
 }
 
 section#mais1, section#mais2 {
 	display: block;
 	float: left;
 	background-color:#3d3144;
-	margin: 0px 0px 0px 5px;
+	margin: 0 0 0 5px;
 	padding: 10px;
 	width: 325px;
 	height: 100px;
-
 }
 
 /*CORPO - Lado esquerdo*/
@@ -184,9 +203,9 @@ aside#lateral {
 	display: block;
 	float: right;
 	background-color:#3d3144;
-	margin:5px 5px 0px 0px;
+	margin:5px 5px 0 0px;
 	width: 290px;
-	margin:5px 5px 0px 0px;
+	margin:5px 5px 0 0px;
 }
 
 div#caixamaislidos h2{ /*faixas escuras de titulo*/
@@ -194,7 +213,8 @@ div#caixamaislidos h2{ /*faixas escuras de titulo*/
 	text-transform: uppercase;
 	padding: 10px;
 	padding-left: 20px;
-	color:#ff00ff
+	color: #ffffff;
+	text-shadow: 1px 1px 3px #ff00ff;
 }
 
 input#pesquisa {
@@ -205,7 +225,7 @@ input#pesquisa {
 
 div#caixamaislidos {
 	background-color: #808080;
-	margin: -15px 0px 10px 10px;
+	margin: -15px 0 10px 10px;
 	width: 270px;
 	padding-bottom: 10px;
 	color: #000000;
@@ -216,17 +236,18 @@ div#caixamaislidos li {
 	padding-right: 5px;
 }
 
-img.maisLido {
-	margin: 3px 5px 6px 15px;
+
+.maisLido {
 	width: 120px;
 	height: 120px;
-	background-color: #ffffff;
 	border-radius: 5px;
 	box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+	margin: 3px 0 6px 16px;
 }
 
 img.maisLido:hover {
 	transform: scale(1.1);
+	transition: 0.3s;
 }
 
 /*rodapé*/
